@@ -1,7 +1,8 @@
 <template>
   <div class = 'container'>
       <div class='part1'>
-          <img v-bind:src=imgSrc width='450px'>
+          <canvas id="canvas" width='450px' height='450px' ></canvas>
+          <!-- <img v-bind:src=imgSrc width='450px'> -->
       </div>
       <div class='part2'>
      <h1>Hi~ I‘m Sixuan</h1>
@@ -23,10 +24,11 @@ export default {
   name: 'image',
   data () {
     return {
-      imgSrc: '../static/home/snowBackgroundFigma.png'
+    //   imgSrc: '../static/home/snowBackgroundFigma.png'
     }
   }
 }
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -70,5 +72,12 @@ p{
     font-weight: lighter;
     color: #000000;
     text-align:left;
+}
+canvas{
+    /* background-color:gray; */
+    background-image: url('/static/snowBackgroundFigma.png');   
+    background-size:     cover;                      
+    background-repeat:   no-repeat;
+    background-position: center center;
 }
 </style>
