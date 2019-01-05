@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="nav">
-        <div class="nav-title" onclick="window.location.href='/'" style="cursor: pointer;"><img src="./assets/muben logo 2.png" width="6%"> Sixuan Li</div>
+        <div class="nav-title" onclick="window.location.href='/'" style="cursor: pointer;"><img src="./assets/muben logo 2.png" width="20rem"> Sixuan Li</div>
         <ul>
             <li onclick="window.location.href='/'">Work</li>
             <li onclick="window.location.href='/about'">Resume</li>
@@ -9,8 +9,13 @@
         </ul>
     </div>
     <router-view/>
+    <div class="copyright">
+        <div class="image-middle-container">
+            <img src="./assets/muben logo 2.png" width="24px" hight="24px" style="margin: 20px 0" >
+        </div>
+        Design & Code by Sixuan Li &copy; 2018
+    </div>
   </div>
-
 </template>
 
 <script>
@@ -27,21 +32,34 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 6rem;
+}
+.icon {
+    width: 1.2em;
+    height: 1.2em;
+    vertical-align: -0.15em;
+    /* fill: currentColor;  */
+    fill: rgb(190, 190, 190);
+    overflow: hidden;
+    display: inline;
+    margin: 0.6rem 0.7rem 0.2rem 0.1rem;
+    position:relative;
+    float:left;
 }
 a {
     color: #000000;
 }
 .nav {
     position: relative;
-    margin: 80px 10px 30px 200px;
-    height: 28px
+    margin: 5rem 1rem 3rem 1rem;
+    height: 2rem
 }
+
 .nav .nav-title {
     position: absolute;
-    left: 5;
-    float: left;
-    height: 28px;
+    left: 18rem;
+    /* float: left; */
+    height: 3rem;
     font-family: optima;
     vertical-align: middle;
     /* font-family: 'Open Sans', sans-serif; */
@@ -53,17 +71,16 @@ a {
 }
 .nav >ul{
     list-style-type:none;
-    position: absolute;
+    float: right;
     right: 0;
-    margin-right: 20em;
-    line-height: 28px;
+    margin-right: 18rem;
     font-weight: normal;
     font-family: 'Lato', sans-serif;
     font-size: 14px;
     color: #000000;
 }
 .nav >ul >li {
-    margin: 0 20px;
+    margin: 0 2rem;
     text-decoration: none;
     list-style: none;
     display: inline;
@@ -76,5 +93,84 @@ a {
     cursor: pointer;
     transition: 0.2s;
 }
+.copyright{
+    float:center;
+    padding: 4rem 0;
+    text-align: center;
+    font-size: 12px;
+    font-family: Myriadpro;
+    color: #9b9b9b; 
+    margin-top: 1rem;
+}
+.image-middle-container{
+    text-align: center;
+}
+
+@media (max-width: 40em)  {
+  /* Pull out the header and footer */
+  .nav{
+      margin:0;
+  }
+  .nav .nav-title {
+    left: 0rem;
+    font-size: 30px;
+  }
+  .nav >ul{
+    list-style-type:none;
+    right: 0rem;
+    margin-right: 0rem;
+}
+.nav >ul >li {
+    margin: 0 0.5rem;
+}
+  .copyright {
+    text-align: center;
+    margin: 0 auto;
+    bottom: 0;
+    float:center;
+    padding: 4rem 0; 
+    margin-top: 1rem;
+  }
+  /* Start the vertical centering */
+  .image-middle-container {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .nav {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (max-width: 70em)and (min-width: 40em) {
+  /* Pull out the header and footer */
+    .nav{
+      margin:auto;
+  }
+  .nav .nav-title {
+    left: 5rem;
+  }
+    .nav >ul{
+    list-style-type:none;
+    right: 0rem;
+    margin-right: 5rem;
+    }
+  
+  .copyright {
+    text-align: center;
+    margin: 0 auto;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .image-middle-container {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .nav {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+
+
 
 </style>
