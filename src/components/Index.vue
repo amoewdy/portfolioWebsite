@@ -35,7 +35,7 @@
     <div class="imageContainer">
     <div id="root">
         <div class="item">
-            <img class="itemImg"  src="/static/home/img1.png" alt="" width="100%" onmousemove="IndexImageMoveIn(this)" onmouseout="IndexImageMoveOut(this)" onclick="window.location.href='/'"/>
+            <img class="itemImg"  src="/static/home/img1.png" alt="" width="100%" onmousemove="IndexImageMoveIn(this)" onmouseout="IndexImageMoveOut(this)" onclick="window.location.href='/#/sandword'"/>
             <div class="hint">
                     <h2>SandWord</h2>
                     <p style='line-height: 22px;font-family:Lato, sans-serif;margin-top:0.3rem '>A self-help APP that alleviates emotional problems <br/>| iOS Development | UX Design |</p>
@@ -289,7 +289,8 @@ p{
     text-align:left;
 }
 #canvas{
-    background-image: url('/static/snowBackgroundFigma.png');   
+    /* background-image: url('/static/snowBackgroundFigma.png');    */
+    background-image: url('/static/snowBackground2.png');   
     background-size:     cover;                      
     background-repeat:   no-repeat;
     background-position: center center;

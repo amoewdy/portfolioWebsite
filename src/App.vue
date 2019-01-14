@@ -30,9 +30,13 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /* text-align: center; */
   color: #2c3e50;
-  margin-top: 6rem;
+  margin: 6rem 0rem 0rem 0rem;
+}
+.container{
+    margin: 0rem 0rem 5rem 0rem;
+    float: middle;
 }
 .icon {
     width: 1.2em;
@@ -51,8 +55,12 @@ a {
 }
 .nav {
     position: relative;
-    margin: 5rem 1rem 3rem 1rem;
-    height: 2rem
+    margin: 5rem 1rem 1rem 1rem;
+    height: 7rem
+}
+body{
+  margin:0;
+  padding:0;
 }
 
 .nav .nav-title {
@@ -170,7 +178,102 @@ a {
   }
 }
 
-
-
+.parent{
+    display: flex;
+    margin:4rem;
+}
+.left{
+    /* flex: 0 0 100px; */
+    flex:1;
+    margin-right: 4rem;
+    }
+.info{
+    margin-top:3rem;
+    display: flex;
+}
+.left .info .left-left{
+    flex: 0 0 100px;
+}
+.left .info .left-right{
+    flex: 1;
+    margin-right: 4rem;
+}
+.right{
+    /* height: 100px; */
+    flex: 0 0 200px;
+    /* background-color: #f8f8f8; */
+    background:linear-gradient(to right,#ffffff 0%,#ffffff 10%, #f7f7f7 0, #f7f7f7 60%,#ffffff 0%,#ffffff 20%);
+    background-size: 190px;
+}
+.dark-page{
+    position: relative;
+    background-color: #f7f7f7;
+    padding: 20px 20px 60px;
+}
+.light-page{
+    position: relative;
+    background-color: #ffffff;
+    padding: 20px 20px 60px;
+}
+.first-page{
+    position: relative;
+    background-color: #fff;
+    padding: 20px 20px 60px;
+}
+.paragraph{
+    margin: 0px 0;
+}
+.bannner{
+    width: 100%;
+    /* margin-top: 60px; */
+}
+.child + .child{
+    margin-left: 20px;
+}
+.content-container-title{
+    max-width:890px;
+    margin: auto;
+}
+.content-container{
+    max-width:800px;
+    margin: auto;
+}
+.title{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    vertical-align: left;
+    display:flex;
+    /* border-left: 20px dashed #DEDEDE; */
+}
+.title .title-text{
+        flex: 1;
+}
+.title .title-text>h4{
+    margin: 0;
+    font-weight: bold;
+    font-family: 'Lora', serif;
+    font-size: 29px;
+    color:#c9c9c9;
+    vertical-align: left;
+}
+.title .title-text>h5{
+    margin-top: 0.1rem;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color:#000000;
+    vertical-align: left;
+}
+.title .title-color1{
+    margin: 8px 18px 20px 0;
+    flex: 0 0 25px;
+    background:linear-gradient( #e2e2e2 0, #e2e2e2 40%, #f7f7f7 0%, #f7f7f7 60%)
+}
+.title .title-color2{
+    margin: 8px 18px 20px 0;
+    flex: 0 0 25px;
+    background:linear-gradient( #dedede 0, #dedede 40%, #ffffff 0%, #ffffff 60%)
+}
 
 </style>
