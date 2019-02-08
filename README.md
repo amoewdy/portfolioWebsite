@@ -1,2 +1,2 @@
-# Personal website for design projects
+Personal website for design projects
 
