@@ -4,8 +4,9 @@
         <div class="nav-title" onclick="window.location.href='/'" style="cursor: pointer;"><img src="./assets/muben logo 2.png" width="20rem"> Sixuan Li</div>
         <ul>
             <li onclick="window.location.href='/'">Work</li>
-            <li onclick="window.location.href='/about'">Resume</li>
-            <li onclick="window.location.href='/about'">About</li> 
+             <!-- <li onclick="https://drive.google.com/file/d/1PDsDDt2Ex-EwX7r8kiax3OM7ld3jfxjm/view?usp=sharing'">Resume</li> -->
+            <li><a target="blank" style="text-decoration: none;" href="https://drive.google.com/file/d/1PDsDDt2Ex-EwX7r8kiax3OM7ld3jfxjm/view?usp=sharing'">Resume</a></li>
+            <li onclick="window.location.href='/'">About</li> 
         </ul>
     </div>
     <router-view/>
@@ -238,10 +239,17 @@ body{
     max-width:800px;
     margin: auto;
 }
+.content-container-large{
+    max-width:1100px;
+    margin: auto;
+    float: middle;
+    vertical-align: middle;
+    text-align: center;
+}
 .title{
     margin-top: 40px;
     margin-bottom: 30px;
-    padding-left: 10px;
+    padding-left: 0px;
     vertical-align: left;
     display:flex;
     /* border-left: 20px dashed #DEDEDE; */
@@ -266,14 +274,51 @@ body{
     vertical-align: left;
 }
 .title .title-color1{
-    margin: 8px 18px 20px 0;
-    flex: 0 0 25px;
-    background:linear-gradient( #e2e2e2 0, #e2e2e2 40%, #f7f7f7 0%, #f7f7f7 60%)
+    margin: 8px 19px 20px 0;
+    flex: 0 0 17px;
+    background:linear-gradient( #e2e2e2 0, #e2e2e2 27%, #f7f7f7 0%, #f7f7f7 73%)
 }
 .title .title-color2{
-    margin: 8px 18px 20px 0;
-    flex: 0 0 25px;
-    background:linear-gradient( #dedede 0, #dedede 40%, #ffffff 0%, #ffffff 60%)
+    margin: 8px 19px 20px 0;
+    flex: 0 0 17px;
+    background:linear-gradient( #ebebeb 0, #ebebeb 27%, #ffffff 0%, #ffffff 73%)
 }
+.title .title-color3{
+    margin: 8px 19px 20px 0;
+    flex: 0 0 17px;
+    background:linear-gradient( #cecece 0, #cecece 27%, #e0e0e0 0%, #e0e0e0 73%)
+}
+.ending-pointer{
+    text-align: right;
+    margin: 20px 40px;
+}
+
+.ending-pointer>div{
+    display: inline-block;
+    line-height: 30px;
+}
+
+.ending-pointer>div:hover{
+    cursor: pointer;
+}
+span{
+    font-weight: bold;
+    letter-spacing:2px;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: #202020;
+    margin: 10px 0 20px 0;
+    text-align:left;
+}
+.next{
+    font-size: 18px;
+    color: #c9caca;
+}
+
+.project{
+    font-size: 24px;
+    font-weight: bold;
+}
+
 
 </style>

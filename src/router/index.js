@@ -4,6 +4,11 @@ import index from '@/components/index'
 // import BootstrapVue from 'bootstrap-vue'
 import zipclean from '@/components/zipclean'
 import sandword from '@/components/sandword'
+import wandpoint from '@/components/wandpoint'
+import clubhusky from '@/components/clubhusky'
+import icushion from '@/components/icushion'
+import daydreaming from '@/components/daydreaming'
+import hemago from '@/components/hemago'
 
 Vue.use(Router)
     // Vue.use(BootstrapVue);
@@ -23,6 +28,31 @@ export default new Router({
             path: '/sandword',
             name: 'SandWord',
             component: sandword
-        }
+        },
+        {
+            path: '/wandpoint',
+            name: 'Wandpoint',
+            component: wandpoint
+        },
+        {
+            path: '/clubhusky',
+            name: 'clubhusky',
+            component: clubhusky
+        },
+        {
+            path: '/icushion',
+            name: 'iCushion',
+            component: icushion
+        },
+        {
+            path: '/daydreaming',
+            name: 'Daydreaming',
+            component: daydreaming
+        },
+        {
+            path: '/hemago',
+            name: 'HemaGo',
+            component: hemago
+        },
     ]
 })

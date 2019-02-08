@@ -2,7 +2,7 @@
   <div class = 'container'>
       <div class='intro'>
       <div class='part1'>
-          <canvas id="canvas" ></canvas>
+          <canvas id="canvas"  class="animated fadeIn delay-0.8s"></canvas>
           <!-- <img v-bind:src=imgSrc width='450px'> -->
       </div>
       <div class='part2'>
@@ -18,71 +18,87 @@
      </p>
     <div class="icon-container">
         <svg class="icon" aria-hidden="true">
-        <use xlink:href="#icon-mail"></use>
+            <a xlink:href="Mailto:sixuanli@outlook.com" target="blank">
+            <rect x="0" y="0" width="300" height="30" rx="10" ry="10"
+              style="fill:white"/>
+        <use xlink:href="#icon-mail" fill="lightgray"></use>
+            </a>
         </svg>
         <svg class="icon" aria-hidden="true">
-        <use xlink:href="#icon-linkedin"></use>
+            <a xlink:href="https://www.linkedin.com/in/sixuan-li-69a171155/" target="blank">
+            <rect x="0" y="0" width="300" height="30" rx="10" ry="10"
+              style="fill:white"/>
+        <use xlink:href="#icon-linkedin" fill="lightgray"></use>
+            </a>
         </svg>
         <svg class="icon" aria-hidden="true">
-        <use xlink:href="#icon-github"></use>
+            <a xlink:href="https://github.com/amoewdy" target="blank" >
+            <rect x="0" y="0" width="300" height="30" rx="10" ry="10"
+              style="fill:white"/>
+        <use xlink:href="#icon-github" fill="lightgray"></use>
+            </a>
         </svg>
-         <svg class="icon" aria-hidden="true">
-        <use xlink:href="#icon-facebook"></use>
-        </svg>
+         <!-- <svg class="icon" aria-hidden="true">
+             <a xlink:href="https://www.facebook.com/sixuan.li.75" target="blank" >
+             <rect x="0" y="0" width="300" height="30" rx="10" ry="10"
+              style="fill:white"/>
+        <use xlink:href="#icon-facebook" fill="lightgray"></use>
+            </a>
+        </svg> -->
     </div>
     </div>
     </div>
     <div class="imageContainer">
     <div id="root">
         <div class="item">
-            <img class="itemImg"  src="/static/home/img1.png" alt="" width="100%" onmousemove="IndexImageMoveIn(this)" onmouseout="IndexImageMoveOut(this)" onclick="window.location.href='/#/sandword'"/>
+            <img class="itemImg"  src="/static/home/sandword img.png" alt="" width="100%" onmousemove="IndexImageMoveIn(this)" onmouseout="IndexImageMoveOut(this)" onclick="window.location.href='/#/sandword'"/>
             <div class="hint">
                     <h2>SandWord</h2>
-                    <p style='line-height: 22px;font-family:Lato, sans-serif;margin-top:0.3rem '>A self-help APP that alleviates emotional problems <br/>| iOS Development | UX Design |</p>
+                    <p style='line-height: 22px;font-family:Lato, sans-serif;margin-top:0.3rem '>A self-help APP that alleviates emotional problems <br/>| App Development | UX Design |</p>
             </div>
         </div>
         <div class="item">
-            <img class="itemImg" src="/static/home/img3.png" alt="" width="100%"/>
+            <img class="itemImg" src="/static/home/img3.png" alt="" width="100%" onmousemove="IndexImageMoveIn(this)" onmouseout="IndexImageMoveOut(this)" onclick="window.location.href='/#/wandpoint'"/>
             <div class="hint">
                     <h2>Wandpoint</h2>
                     <p style='line-height: 22px;font-family:Lato, sans-serif;margin-top:0.3rem '>Adding a new dimension to reality <br/>| Product Design | Augmented Reality |</p>
             </div>
         </div>
         <div class="item">
-            <img class="itemImg" src="/static/home/img4.png" alt="" width="100%"/>
+            <img class="itemImg" src="/static/home/clubhusky.png" alt="" width="100%" onmousemove="IndexImageMoveIn(this)" onmouseout="IndexImageMoveOut(this)" onclick="window.location.href='/#/clubhusky'"/>
             <div class="hint">
-                <h2>ZipClean</h2>
-                <p style='line-height: 22px;font-family:Lato, sans-serif;margin-top:0.3rem '> A home-use cleaner for sandwich bags <br/>| User Research | UX Design |</p>
+                <h2>clubHusky</h2>
+                <p style='line-height: 22px;font-family:Lato, sans-serif;margin-top:0.3rem '> Explore student organizations <br/>| User Research | UX Design |</p>
             </div>
         </div>
         <div class="item">
-            <img class="itemImg" src="/static/home/img2.png" alt="" width="100%"/>
+            <img class="itemImg" src="/static/home/img2.png" alt="" width="100%" onmousemove="IndexImageMoveIn(this)" onmouseout="IndexImageMoveOut(this)" onclick="window.location.href='/#/icushion'"/>
             <div class="hint">
                 <h2>iCushion</h2>
                 <p style='line-height: 22px;font-family:Lato, sans-serif;margin-top:0.3rem '> A smart cushion that helps children improve their sitting posture <br/>| Design Research | UX Design |</p>
             </div>
         </div>
         <div class="item">
-            <img class="itemImg" src="/static/home/img5.png" alt="" width="100%" />
+            <img class="itemImg" src="/static/home/img5.png" alt="" width="100%" onmousemove="IndexImageMoveIn(this)" onmouseout="IndexImageMoveOut(this)" onclick="window.location.href='/#/daydreaming'"/>
             <div class="hint">
                     <h2>Daydreaming</h2>
                     <p style='line-height: 22px;font-family:Lato, sans-serif;margin-top:0.3rem '>The tension between dream and reality<br/>| Interactive Installation |</p>
             </div>
         </div>
         <div class="item">
-            <img class="itemImg" src="/static/home/img7.png" alt="" width="100%" />
+            <img class="itemImg" src="/static/home/img7.png" alt="" width="100%" onmousemove="IndexImageMoveIn(this)" onmouseout="IndexImageMoveOut(this)" onclick="window.location.href='/#/hemago'" />
             <div class="hint">
                     <h2>HEMA-GO Fresh</h2>
                     <p style='line-height: 22px;font-family:Lato, sans-serif;margin-top:0.3rem '>Your connected shopping experience <br/>| Business Design |</p>
             </div>
         </div>
-        <div class="item">
+        <!-- <div class="item">
             <img class="itemImg" src="/static/home/img6.png" alt="" width="100%"/>
             <div class="hint">
                 <h2>Lumii</h2>
                 <p style='line-height: 22px;font-family:Lato, sans-serif;margin-top:0.3rem '> A Cozy Spiritual Home <br/>| Smart Home | Product Design |</p>
             </div>
-        </div>
+        </div> -->
     </div>
     </div>
   </div>
