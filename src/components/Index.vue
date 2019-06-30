@@ -51,6 +51,13 @@
     <div class="imageContainer">
     <div id="root">
         <div class="item">
+            <img class="itemImg"  src="/static/home/img8.png" alt="" width="100%" onmousemove="IndexImageMoveIn(this)" onmouseout="IndexImageMoveOut(this)" onclick="window.location.href='/#/camt'"/>
+            <div class="hint">
+                    <h2>Child Asthma Management Toolkit</h2>
+                    <p style='line-height: 22px;font-family:Lato, sans-serif;margin-top:0.3rem '>61 Days from Concept to Delivery <br/>| IoT | Web App |</p>
+            </div>
+        </div>
+        <div class="item">
             <img class="itemImg"  src="/static/home/sandword img.png" alt="" width="100%" onmousemove="IndexImageMoveIn(this)" onmouseout="IndexImageMoveOut(this)" onclick="window.location.href='/#/sandword'"/>
             <div class="hint">
                     <h2>SandWord</h2>
