@@ -2,7 +2,7 @@
     <div class="animated fadeIn delay-0.5s">
   <div class = 'container'>
      <div class="content-container-large">
-            <img src="/static/camp/1.png" width='100%' class='large-img'>
+            <img src="static/CAMT/1.png" width='100%' class='large-img'>
     </div>
     <div class="first-page">
         <div class="content-container-title">
